@@ -34,6 +34,7 @@ server.use((err, req, res, next) => {
   console.log("Error:", err)
   res.status(500).json({
     message: "Something went wrong",
+    err
   })
 })
 
