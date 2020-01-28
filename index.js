@@ -37,7 +37,6 @@ server.use((err, req, res, next) => {
   })
 })
 
-// If the server is being imported don't start the server
 if(!module.parent){
   server.listen(port, () => {
     console.log(`\n=> Server up at http://localhost:${port}\n`)

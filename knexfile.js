@@ -22,4 +22,11 @@ module.exports = {
       filename: "./data/test.db3",
     },
   },
+  
+  production: {
+    ...sqlite,
+    connection: {
+      filename: "./data/production.db3",
+    },
+  },
 }
